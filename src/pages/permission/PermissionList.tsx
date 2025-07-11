@@ -1,19 +1,19 @@
 import {
-  List,
-  Datagrid,
-  TextField,
-  EditButton,
-  DeleteButton,
-  TextInput,
-  SearchInput,
-  FilterButton,
   CreateButton,
-  TopToolbar
-} from 'react-admin';
+  Datagrid,
+  DeleteButton,
+  EditButton,
+  FilterButton,
+  List,
+  SearchInput,
+  TextField,
+  TextInput,
+  TopToolbar,
+} from "react-admin";
 
 const permissionFilters = [
   <SearchInput source="q" alwaysOn />,
-  <TextInput label="Название" source="name" />
+  <TextInput label="Название" source="name" />,
 ];
 
 const ListActions = () => (
@@ -24,7 +24,7 @@ const ListActions = () => (
 );
 
 export const PermissionList = () => (
-  <List 
+  <List
     filters={permissionFilters}
     actions={<ListActions />}
   >
@@ -35,4 +35,4 @@ export const PermissionList = () => (
       <DeleteButton />
     </Datagrid>
   </List>
-); 
+);

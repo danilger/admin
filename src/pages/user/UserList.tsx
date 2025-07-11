@@ -16,7 +16,9 @@ import {
 const userFilters = [
   <SearchInput source="q" alwaysOn />,
   <TextInput label="Имя пользователя" source="username" />,
-  <TextInput label="Email" source="email" />
+  <TextInput label="Email" source="email" />,
+  <BooleanField source="isActive" label="Активен" />,
+  <BooleanField source="isVerified" label="Подтвержден" />
 ];
 
 const ListActions = () => (

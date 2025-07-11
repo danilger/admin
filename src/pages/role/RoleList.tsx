@@ -1,18 +1,19 @@
 import {
-  List,
-  Datagrid,
-  TextField,
-  EditButton,
-  DeleteButton,
-  TextInput,
-  SearchInput,
-  FilterButton,
-  CreateButton,
-  TopToolbar,
   ArrayField,
+  ChipField,
+  CreateButton,
+  Datagrid,
+  DeleteButton,
+  EditButton,
+  FilterButton,
+  List,
+  SearchInput,
   SingleFieldList,
-  ChipField
+  TextField,
+  TextInput,
+  TopToolbar
 } from 'react-admin';
+
 
 const roleFilters = [
   <SearchInput source="q" alwaysOn />,
